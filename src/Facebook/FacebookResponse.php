@@ -258,7 +258,7 @@ class FacebookResponse
      *
      * @throws FacebookSDKException
      */
-    public function getGraphNode(string $subclassName = null): GraphNode
+    public function getGraphNode(?string $subclassName = null): GraphNode
     {
         return (new GraphNodeFactory($this))->makeGraphNode($subclassName);
     }
