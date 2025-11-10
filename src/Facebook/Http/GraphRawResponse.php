@@ -55,7 +55,7 @@ class GraphRawResponse
      * @param string $body The raw response body.
      * @param int|null $httpStatusCode The HTTP response code (if sending headers as parsed array).
      */
-    public function __construct(array|string $headers, string $body, int $httpStatusCode = null)
+    public function __construct(array|string $headers, string $body, ?int $httpStatusCode = null)
     {
         $this->httpResponseCode = (int)$httpStatusCode;
 
