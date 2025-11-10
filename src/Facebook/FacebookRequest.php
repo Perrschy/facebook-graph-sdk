@@ -91,7 +91,7 @@ class FacebookRequest
      *
      * @throws FacebookSDKException
      */
-    public function __construct(FacebookApp $app = null, string|AccessToken|null $accessToken = null, string $method = null, ?string $endpoint = null, array $params = [], ?string $eTag = null, string $graphVersion = null)
+    public function __construct(FacebookApp $app = null, string|AccessToken|null $accessToken = null, ?string $method = null, ?string $endpoint = null, array $params = [], ?string $eTag = null, ?string $graphVersion = null)
     {
         $this->setApp($app);
         $this->setAccessToken($accessToken);
